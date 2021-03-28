@@ -1,0 +1,26 @@
+.anime { animation: rotate 4s infinite linear !important}
+ 
+@keyframes rotate{
+   from{  transform: rotateY(0deg)   }
+   to  {  transform: rotateY(360deg) }
+}
+
+.anime2 { animation: rotate2 4s infinite linear !important}
+ 
+@keyframes rotate2{
+   from{  transform: rotateX(0deg)   }
+   to  {  transform: rotateX(360deg) }
+}
+ 
+.player {
+   background: #273B7C !important;
+}
+ 
+.anime { animation: rotate 4s infinite linear !important}
+ 
+@keyframes rotate{
+   from{  transform: rotateY(0deg)   }
+   to  {  transform: rotateY(360deg) }
+}
+ 
+ 
