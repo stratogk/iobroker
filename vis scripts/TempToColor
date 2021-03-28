@@ -1,0 +1,35 @@
+
+    
+    
+    function TempToColor(n)
+{
+    var rgb = Hex2Deci('A9F5A9');
+    
+    if (n > 55)         rgb = Hex2Deci('#CD0000');
+    else if (n >= 52)    rgb = Hex2Deci('FF0000');
+    else if (n >= 49)    rgb = Hex2Deci('FF6347');
+    else if (n >= 46)    rgb = Hex2Deci('edd0d4');
+    else if (n >= 43)    rgb = Hex2Deci('00FF00');
+    else if (n >= 40)    rgb = Hex2Deci('A9F5A9');
+    else if (n >= 37)    rgb = Hex2Deci('A9E2F3');
+    else if (n >= 33)     rgb = Hex2Deci('81BEF7');
+    else                rgb = Hex2Deci('2E64FE');
+ 
+    return 'rgb(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ')'; 
+}
+ 
+function Hex2Deci(hex) // Hexadezimal nach Dezimal
+{
+    var r, g, b, hr, hg, hb;
+    
+    hr = hex.substr(0,2);
+    r = parseInt(hr,16);
+    
+    hg = hex.substr(2,2);
+    g = parseInt(hg,16);
+ 
+    hb = hex.substr(4,2);
+    b = parseInt(hb,16);
+ 
+    return [r, g, b];
+}
