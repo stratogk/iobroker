@@ -1,0 +1,26 @@
+function color(value) {
+    	var highColor = "#ff3030";
+    	var lowColor = "#3030ff";
+    	var highTemp = 70;
+    	var lowTemp = 30;
+		var retValue = lowColor;
+    	if (value > lowTemp) {
+    		var lr = parseInt("0x"+lowColor.substring(1,3));
+    		var lg = parseInt("0x"+lowColor.substring(3,5));
+    		var lb = parseInt("0x"+lowColor.substring(5,7));
+    		var hr = parseInt("0x"+highColor.substring(1,3));
+    		var hg = parseInt("0x"+highColor.substring(3,5));
+    		var hb = parseInt("0x"+highColor.substring(5,7));
+    		var cr = parseInt(lr + (hr-lr)*(value-lowTemp)/(highTemp-lowTemp)).toString(16);
+    		var cg = parseInt(lg + (hg-lg)*(value-lowTemp)/(highTemp-lowTemp)).toString(16);
+    		var cb = parseInt(lb + (hb-lb)*(value-lowTemp)/(highTemp-lowTemp)).toString(16);
+    		cr = cr.length == 1 ? "0"+cr: cr;
+    		cg = cg.length == 1 ? "0"+cg: cg;
+    		cb = cb.length == 1 ? "0"+cb: cb;
+    		retValue = "#"+cr+cg+cb;
+    	}
+		if (value > highTemp) {
+    		retValue = highColor;
+    	}
+		return retValue;
+    }
