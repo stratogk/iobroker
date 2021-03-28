@@ -1,0 +1,29 @@
+.blink-red   {
+ animation: mdui-red-blink-ani 3s linear infinite;
+}
+@keyframes mdui-red-blink-ani  {
+ 0%,50% {filter: drop-shadow(0px 0px 4px #F44336) drop-shadow(0px 0px 4px #F44336) drop-shadow(0px 0px 4px #F44336); }
+ 51% {filter: none;}
+ 
+}
+.blink-yellow {
+ animation: mdui-yellow-blink-ani 1s linear infinite;
+}
+@keyframes mdui-yellow-blink-ani  {
+ 0%,70% {filter: drop-shadow(0px 0px 4px #FFDB3B) drop-shadow(0px 0px 4px #FFDB3B) drop-shadow(0px 0px 4px #FFDB3B); }
+ 71% {filter: none;}
+ 
+}
+
+
+.blink-colorful   {
+ animation: mdui-colorful-blink-ani 3s linear infinite;
+   
+}
+@keyframes mdui-colorful-blink-ani {
+ 8% {filter: drop-shadow(0px 0px 4px #FFFF00) drop-shadow(0px 0px 4px #FFFF00) drop-shadow(0px 0px 4px #FFFF00); }
+ 30% {filter: drop-shadow(0px 0px 4px #01DF3A) drop-shadow(0px 0px 4px #01DF3A) drop-shadow(0px 0px 4px #01DF3A); }
+ 60% {filter: drop-shadow(0px 0px 4px #2BF23F) drop-shadow(0px 0px 4px #2BF23F) drop-shadow(0px 0px 4px #2BF23F); }
+ 0% {filter: none;}
+}
+ 
