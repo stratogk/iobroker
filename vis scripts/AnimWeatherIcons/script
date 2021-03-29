@@ -1,0 +1,39 @@
+/***************************************************
+                     WeatherIcon
+****************************************************/
+
+   function WeatherIcon(value) {
+
+  let result;
+  
+  if (value == 5) {
+  result = '<div class="weather"><div class="icon sun-shower"><div class="cloud"></div><div class="sun"><div class="rays"></div></div><div class="rain"></div></div></div>'
+  } 
+  else if (value == 13) {
+  result = '<div class="weather"><div class="icon thunder-storm"><div class="cloud"></div><div class="lightning"><div class="bolt"></div><div class="bolt"></div></div></div></div>';
+  }
+  else if (value == 4) {
+  result = '<div class="weather"><div class="icon cloudy"><div class="cloud"></div><div class="cloud"></div></div></div>';
+  }
+  else if (value == 19) {
+  result = '<div class="weather"><div class="icon flurries"><div class="cloud"></div><div class="snow"><div class="flake"></div><div class="flake"></div></div></div></div>';
+  }
+  else if (value == 1) {
+  result = '<div class="weather"><div class="icon sunny"><div class="sun"><div class="rays"></div></div></div></div>';
+  }
+  else if (value == 7 || value == 10) {
+  result = '<div class="weather"><div class="icon rainy"><div class="cloud"></div><div class="rain"></div></div></div></div>';
+  }
+  
+  else {
+      
+  result = '<div class="weather"></div>';
+  
+  }
+  
+  retValue = result;
+  
+  return retValue;
+  }
+  
+  
